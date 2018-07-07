@@ -1,0 +1,78 @@
+/*
+<!--
+Interactive Portfolio Main CSS
+(C) Elena Sparacio 2018
+-->
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Montserrat|PT+Sans|Raleway');
+
+.header-img{
+    position:relative;
+    height:500px;
+    width:100%;
+    background-size:cover;
+    background-image:url("../images/background.jpg");
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+}
+
+.navbar-nav{
+  padding-right:4em;
+}
+
+.nav-item{
+  padding:1.5em;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+  font-family: 'Fjalla One';
+  font-size:1.5em;
+}
+
+.container {
+}
+
+.centered h1{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:80%;
+    color:white;
+    text-align:center;
+    font-size:250%;
+    font-family:Karla;
+    
+}
+
+.title{
+  text-align:center;
+  font-family:'Montserrat'
+}
+
+.card-img{
+   height:150px;
+   width:150px;
+   padding: 1em;
+}
+
+.tech-info{
+  background:#f9fdff;
+}
+
+.card {
+  background:transparent;
+}
+
+.card:hover{
+    transition: background-color 0.5s ease;
+    transition: border 0.5s ease;
+    background-color:#efefef;
+}
+
+
+
