@@ -64,10 +64,6 @@ body{
    padding: 1em;
 }
 
-.tech-info{
-  background:#f9fdff;
-}
-
 .card {
   background:transparent;
 }
@@ -76,6 +72,16 @@ body{
     transition: background-color 0.5s ease;
     transition: border 0.5s ease;
     background-color:#efefef;
+}
+
+.test{
+  background-color: blue;
+  font-size: 10px;
+}
+
+.large {
+  font-size:2em;
+  padding:2em;
 }
 
 
