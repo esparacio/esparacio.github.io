@@ -14,13 +14,15 @@ Interactive Portfolio Home Page
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Poiret+One|Raleway|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css" type="text/css" />    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom" style="background-color: black;">
-      <a class="navbar-brand navbar-header" href="#">Elena Sparacio Logo
+  <a class="navbar-brand navbar-header" href="#">Elena Sparacio Logo
   </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,10 +31,10 @@ Interactive Portfolio Home Page
       <div class="collapse navbar-collapse justify-content-end"  id="navbarsExample03">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">SKILLS</a>
+            <a class="nav-link" href="#skills">SKILLS</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">EXPERIENCE</a>
+            <a class="nav-link" href="#experience">EXPERIENCE</a>
           </li>
           </li>
             <li class="nav-item">
@@ -43,66 +45,100 @@ Interactive Portfolio Home Page
           </li>
         </ul>
       </div>
-    </nav>
+</nav>
 
-  <div class="header-img"> 
+
+<!--Navigation end-->
+
+<div class="header-img"> 
   <div class="centered"><h1><b>I am a Senior Software Engineer with a passion for writing smart, maintainable, and well designed code.</b></h1></div>
   </div>
-  </div>
-<body>
-  <div>
-  <br>    
-  <h1 class="title">Career Highlights</h1>
-  <ul>
-    <li>Promoted from entry level to <b>senior level</b> after only one year
-</li>
-<li>Implemented widely used feature sets and commands for our customers</li>
-<li>Rewrote a highly used program and reduced the runtime from 3 hours to under 3 minutes </li>
-<li>Selected as a board member of RISE (2018) and a Site Lead for the internship program (2017) </li>
-<li>Trained 5 other engineers on my team</li>
-  </ul>
+</div>
 
+<body>
+  <div class="career-highlights bg-dark text-light">
+    <br>    
+    <h1 class="title">Career Highlights</h1>
+          <p>Promoted from entry level to <b>senior level</b> after only one year</p>
+
+          <p><span class="fa fa-cogs fa-fw fa-5x"></span> Implemented widely used feature sets and commands for our customers</p>
+
+          <p>Rewrote a highly used program and reduced the runtime from 3 hours to under 3 minutes </p>
+        
+          <p>Selected as a board member of RISE (2018) and a Site Lead for the internship program (2017) </p>
+      
+          <p>Trained 5 other engineers on my team</p>          
+          
+   <br> 
   </div>
   
   <br>    
   <div class="tech-info">
-  <h1 class="title">Strongest Technical Proficiencies</h1>
+    <h1 class="title" id="skills">Strongest Technical Proficiencies</h1>
       <div class="card-deck">
-  <div class="card p-4 border-0">
-    <img class="card-img mx-auto d-block" src="images/c.png" alt="Card image cap">
-     <h5 class="card-title text-center">2 years of C/C++</h5>
-      <p class="card-text text-center">At ARRIS, I worked in C/C++ to develop features for customers for complex show and configure commands</p>
+        <div class="card p-4 border-0">
+          <img class="card-img mx-auto d-block" src="images/c.png" alt="Card image cap">
+          <h5 class="card-title text-center">2 years of C/C++</h5>
+          <p class="card-text text-center">At ARRIS, I worked in C/C++ to develop features for customers for complex show and configure commands</p>
+        </div>
+        <div class="card border-0 p-4">
+          <img class="card-img mx-auto d-block" src="images/java.png" alt="Card image cap">
+          <h5 class="card-title text-center">3 years of Java</h5>
+          <p class="card-text text-center">Java was the primary language I learned at Elon University. This was my foundation in object-oriented programming.</p>
+        </div>
+        <div class="card border-0 p-4">
+          <img class="card-img mx-auto d-block" src="images/perl.png" alt="Card image cap">
+          <h5 class="card-title text-center">2 years of Perl</h5>
+          <p class="card-text text-center">At ARRIS, we use Perl in our homegrown automated testing system. This test exercises over 4000 commands.</p>
+        </div>        
+      </div>
+      <br>
+      <div class="card-deck">
+        <div class="card p-4 border-0">
+        <img class="card-img mx-auto d-block" src="images/python.png" alt="Card image cap">
+        <h5 class="card-title text-center">1 year of Python</h5>
+        <p class="card-text text-center">I learned Python in college, and applied it in the workplace when I rewrote and redesigned our massive automated test.</p>
+        </div>
+      <div class="card border-0 p-4">
+        <img class="card-img mx-auto d-block" src="images/linux.png" alt="Card image cap">
+        <h5 class="card-title text-center">2 years of Shell Scripting</h5>
+        <p class="card-text text-center">Shell scripting is integral to functioning on the CLI team at ARRIS.</p>
+      </div>
+      <div class="card border-0 p-4">
+        <img class="card-img mx-auto d-block" src="images/html.png" alt="Card image cap">
+        <h5 class="card-title text-center">5 years of HTML/CSS</h5>
+        <p class="card-text text-center">I've been coding using HTML since high school. I've always had a passion for web design.</p>
+      </div>        
+    </div> 
   </div>
-  <div class="card border-0 p-4">
-    <img class="card-img mx-auto d-block" src="images/java.png" alt="Card image cap">
-      <h5 class="card-title text-center">3 years of Java</h5>
-      <p class="card-text text-center">Java was the primary language I learned at Elon University. This was my foundation in object-oriented programming.</p>
-  </div>
-  <div class="card border-0 p-4">
-    <img class="card-img mx-auto d-block" src="images/perl.png" alt="Card image cap">
-      <h5 class="card-title text-center">2 years of Perl</h5>
-      <p class="card-text text-center">At ARRIS, we use Perl in our homegrown automated testing system. This test exercises over 4000 commands.</p>
-  </div>        
+
+  <div class="education bg-dark">
+  <br>
+  <h1 class="title text-light" id="experience">Education</h1>
+  <br> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-light paragraph-hidden">
+          <p>I attented college at <b>Elon University</b>. I was a Computer Science major and an <b>Elon  College Fellow.</b> Elon College Fellows is a four-year program for students who are passionately  committed to exploring the breadth, depth, and connections within the Arts and Sciences. I received  an annual scholarship, travel grants, and research funding as part of my experience. I engaged in  two years of undergraduate research that was supplemented by three unique seminar courses. </p>
+    
+          <p>During those years, I developed intellectual curiosity and a love of learning. I researched the  potential of using tangible interfaces and volumetric displays in 3D mobile application development.  I presented that research at the Consortium of Computing Sciences in 2017.</p>
+  
+          <p>In 2017, I graduated <b>Cum Laude</b> in just three and a half years, and immediately started my   career at ARRIS.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/elon.jpg" alt="Elon University" class="img-fluid img-thumbnail rounded">
+        </div>
+      </div>
+    </div>
+  <br>
+  <br> 
 </div>
-<br>
-      <div class="card-deck">
-  <div class="card p-4 border-0">
-    <img class="card-img mx-auto d-block" src="images/python.png" alt="Card image cap">
-     <h5 class="card-title text-center">1 year of Python</h5>
-      <p class="card-text text-center">I learned Python in college, and applied it in the workplace when I rewrote and redesigned our massive automated test.</p>
-  </div>
-  <div class="card border-0 p-4">
-    <img class="card-img mx-auto d-block" src="images/linux.png" alt="Card image cap">
-      <h5 class="card-title text-center">2 years of Shell Scripting</h5>
-      <p class="card-text text-center">Shell scripting is integral to functioning on the CLI team at ARRIS.</p>
-  </div>
-  <div class="card border-0 p-4">
-    <img class="card-img mx-auto d-block" src="images/html.png" alt="Card image cap">
-      <h5 class="card-title text-center">5 years of HTML/CSS</h5>
-      <p class="card-text text-center">I've been coding using HTML since high school. I've always had a passion for web design.</p>
-  </div>        
-</div> 
-  </div>
+
+  <h1 class="title">Work Experience</h1>
+  <br> 
+  <h1 class="title">Aspirations</h1>
+ 
+
   
 </body>
 
