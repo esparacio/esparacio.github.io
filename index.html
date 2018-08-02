@@ -25,6 +25,7 @@ Interactive Portfolio Home Page
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="js/particle_effect.js"></script>
     <script type="text/javascript" src="js/hide_nav.js"></script>
@@ -42,10 +43,16 @@ Interactive Portfolio Home Page
       <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
         <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link" href="#career">CAREER</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#skills">SKILLS</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">EDUCATION</a>
+          </li>          
             <li class="nav-item">
-            <a class="nav-link" href="#experience">EXPERIENCE</a>
+            <a class="nav-link" href="#future">FUTURE</a>
           </li>
           </li>
             <li class="nav-item">
@@ -65,7 +72,7 @@ Interactive Portfolio Home Page
 </div>
 <body>
 
-  <div class="career-highlights text-light" style="background-color: black;">
+  <div class="career-highlights text-light" style="background-color: black;" id="career">
     <br>   
     <h1 class="title">Career Highlights</h1>
     <div id="trigger1"></div>
@@ -149,9 +156,9 @@ Interactive Portfolio Home Page
 
 
   <br>
-  <div class="tech-info text-light">
+  <div class="tech-info text-light" id="skills">
     <br>    
-    <h1 class="title" id="skills">Strongest Technical Proficiencies</h1>
+    <h1 class="title">Strongest Technical Proficiencies</h1>
       <div class="card-deck">
         <div class="card p-4 border-0">
           <img class="card-img mx-auto d-block" src="images/c.png" alt="Card image cap">
@@ -191,7 +198,7 @@ Interactive Portfolio Home Page
   
 
   <br>
-  <div class="education">
+  <div id="education">
   <br>
   <h1 class="title text-light" id="experience">Education</h1>
   <br> 
@@ -212,14 +219,8 @@ Interactive Portfolio Home Page
   <br>
   <br> 
 </div>
-
-
-  <div class="work-exp">
-    <h1 class="title">Work Experience</h1>
-    <p></p>
-  </div>
   
-  <div class="aspirations text-light">
+  <div class="text-light" id="future">
       <h1 class="title">I aspire to work at a company that values</h1>
       <br>
       <div class="row">
