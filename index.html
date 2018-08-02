@@ -16,17 +16,18 @@ Interactive Portfolio Home Page
     <link rel="stylesheet" href="styles/main.css" type="text/css" />    
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 </head>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -36,7 +37,7 @@ Interactive Portfolio Home Page
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end"  id="navbarsExample03">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#skills">SKILLS</a>
@@ -56,7 +57,7 @@ Interactive Portfolio Home Page
 </nav>
 <!--Navigation end-->
 
-<div class="header-img"> 
+<div class="header-img" id="particles-js"> 
   <div class="centered" id="tagline"><h1><b>I am a Senior Software Engineer with a passion for writing smart, maintainable, and well designed code.</b></h1></div>
   </div>
 </div>
@@ -86,7 +87,7 @@ Interactive Portfolio Home Page
 
 
   <div class="career-highlights text-light" style="background-color: black;">
-    <br>    
+    <br>   
     <h1 class="title">Career Highlights</h1>
     <div id="trigger1"></div>
     <div id="animate1">
@@ -251,7 +252,122 @@ Interactive Portfolio Home Page
           
    <br> 
   </div>
-  
+
+<!-- Test particles -->
+
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 500,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value":  0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 5,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 5,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
   <div class="tech-info bg-light">
     <br>    
     <h1 class="title" id="skills">Strongest Technical Proficiencies</h1>
