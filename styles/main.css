@@ -13,14 +13,13 @@ body{
 
 .header-img{
     position:relative;
-    height:500px;
+    margin:auto;
+    height:700px;
     width:100%;
     background-size:cover;
-    background-image:url("../images/background.jpg");
-}
-
-.navbar-custom {
-    color: #FFFFFF;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-image:url("../images/moon.jpg");
 }
 
 .navbar-nav{
@@ -35,9 +34,6 @@ body{
 .navbar-nav li a {
   font-family: 'Fjalla One';
   font-size:1.5em;
-}
-
-.container {
 }
 
 .centered h1{
@@ -82,6 +78,20 @@ body{
 .large {
   font-size:1.5em;
   padding:2em;
+}
+
+<style type="text/css">
+
+#pin-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 

@@ -29,7 +29,7 @@ Interactive Portfolio Home Page
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 </head>
 
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom" style="background-color: black;">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
   <a class="navbar-brand navbar-header" href="#">Elena Sparacio Logo
   </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,19 +54,38 @@ Interactive Portfolio Home Page
         </ul>
       </div>
 </nav>
-
-
 <!--Navigation end-->
 
 <div class="header-img"> 
-  <div class="centered"><h1><b>I am a Senior Software Engineer with a passion for writing smart, maintainable, and well designed code.</b></h1></div>
+  <div class="centered" id="tagline"><h1><b>I am a Senior Software Engineer with a passion for writing smart, maintainable, and well designed code.</b></h1></div>
   </div>
 </div>
+
+<!--Hide Navbar on scroll -->
+<script>
+    var myWindow = $(window);
+    var myPosition = myWindow.scrollTop();
+    var up = false;
+    var newScroll;
+
+    myWindow.scroll(function () {
+        newScroll = myWindow.scrollTop();  
+        if (newScroll > myPosition && !up) {
+            $('.navbar').stop().fadeOut();
+            up = !up;
+        } 
+        else if(newScroll < $('.navbar').height() && up) {
+            $('.navbar').stop().fadeIn();
+            up = !up;
+        }
+    myPosition = newScroll;
+});
+</script>
 
 <body>
 
 
-  <div class="career-highlights bg-dark text-light">
+  <div class="career-highlights text-light" style="background-color: black;">
     <br>    
     <h1 class="title">Career Highlights</h1>
     <div id="trigger1"></div>
@@ -148,6 +167,7 @@ Interactive Portfolio Home Page
 
 <script>
     var controller = new ScrollMagic.Controller();
+
     // build tween
     var tween1 = TweenMax.to("#animate1", 1, {className: "+=large"});
     var undoTween1 = TweenMax.to("#animate1", 1, {className: "-=large"});
@@ -294,10 +314,30 @@ Interactive Portfolio Home Page
   <br> 
 </div>
 
-  <h1 class="title">Work Experience</h1>
-  <br> 
-  <h1 class="title">Aspirations</h1>
- 
+  <div class="work-exp">
+    <h1 class="title">Work Experience</h1>
+    <p></p>
+  </div>
+  
+  <div class="aspirations">
+      <h1 class="title">Aspirations</h1>
+      <div class="row">
+        <div class="col-md-4">
+          PIC OF ME
+        </div>
+        <div class="col-md-8">
+          <p>I want to be a part of a company that values:</p>  
+
+
+          <p>Innovation</p>
+          <p>Intellectual Growth</p>
+          <p>Creativity</p>
+          <p>Diversity</p>
+        </div> 
+      </div>
+
+  </div>
+
 
   
 </body>
