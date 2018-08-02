@@ -68,7 +68,7 @@ body{
 .card:hover{
     transition: background-color 0.5s ease;
     transition: border 0.5s ease;
-    background-color:#efefef;
+    background-color:#232323;
 }
 
 .test{
@@ -81,19 +81,10 @@ body{
   padding:2em;
 }
 
-<style type="text/css">
-
-#pin-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+strong{
+  color:#7AE5FF;
 }
 
-.panel {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
 
 @media only screen and (max-width: 768px) {
    .navbar .navbar-collapse {
