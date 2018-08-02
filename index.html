@@ -15,7 +15,6 @@ Interactive Portfolio Home Page
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css" type="text/css" />    
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -27,6 +26,9 @@ Interactive Portfolio Home Page
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="js/particle_effect.js"></script>
+    <script type="text/javascript" src="js/hide_nav.js"></script>
+    <script type="text/javascript" src="js/scroll_effects.js"></script>
 
 </head>
 
@@ -61,30 +63,7 @@ Interactive Portfolio Home Page
   <div class="centered" id="tagline"><h1><b>I am a Senior Software Engineer with a passion for writing smart, maintainable, and well designed code.</b></h1></div>
   </div>
 </div>
-
-<!--Hide Navbar on scroll -->
-<script>
-    var myWindow = $(window);
-    var myPosition = myWindow.scrollTop();
-    var up = false;
-    var newScroll;
-
-    myWindow.scroll(function () {
-        newScroll = myWindow.scrollTop();  
-        if (newScroll > myPosition && !up) {
-            $('.navbar').stop().fadeOut();
-            up = !up;
-        } 
-        else if(newScroll < $('.navbar').height() && up) {
-            $('.navbar').stop().fadeIn();
-            up = !up;
-        }
-    myPosition = newScroll;
-});
-</script>
-
 <body>
-
 
   <div class="career-highlights text-light" style="background-color: black;">
     <br>   
@@ -165,208 +144,8 @@ Interactive Portfolio Home Page
       </div>   
     </div>          
 
-
-<script>
-    var controller = new ScrollMagic.Controller();
-
-    // build tween
-    var tween1 = TweenMax.to("#animate1", 1, {className: "+=large"});
-    var undoTween1 = TweenMax.to("#animate1", 1, {className: "-=large"});
-    var tween2 = TweenMax.to("#animate2", 1, {className: "+=large"});
-    var undoTween2 = TweenMax.to("#animate2", 1, {className: "-=large"});
-    var tween3 = TweenMax.to("#animate3", 1, {className: "+=large"});
-    var undoTween3 = TweenMax.to("#animate3", 1, {className: "-=large"});
-    var tween4 = TweenMax.to("#animate4", 1, {className: "+=large"});
-    var undoTween4 = TweenMax.to("#animate4", 1, {className: "-=large"});
-    var tween5 = TweenMax.to("#animate5", 1, {className: "+=large"});
-
-    // build scenes
-    var scene1 = new ScrollMagic.Scene({
-      triggerElement: "#trigger1",
-      duration: 200,
-      offset: -50
-    }).setTween(tween1);
-
-    var undoScene1 = new ScrollMagic.Scene({
-      triggerElement: "#trigger2",
-      duration: 200,
-      offset: -50
-    }).setTween(undoTween1);
-
-    var scene2 = new ScrollMagic.Scene({
-      triggerElement: "#trigger2",
-      duration: 200,
-      offset: -50
-    }).setTween(tween2);
-
-    var undoScene2 = new ScrollMagic.Scene({
-      triggerElement: "#trigger3",
-      duration: 200,
-      offset: -50
-    }).setTween(undoTween2);    
-
-    var scene3 = new ScrollMagic.Scene({
-      triggerElement: "#trigger3",
-      duration: 200,
-      offset: -50
-    }).setTween(tween3);
-
-    var undoScene3 = new ScrollMagic.Scene({
-      triggerElement: "#trigger4",
-      duration: 200,
-      offset: -50
-    }).setTween(undoTween3); 
-
-    var scene4 = new ScrollMagic.Scene({
-      triggerElement: "#trigger4",
-      duration: 200,
-      offset: -50
-    }).setTween(tween4);
-
-    var undoScene4 = new ScrollMagic.Scene({
-      triggerElement: "#trigger5",
-      duration: 200,
-      offset: -50
-    }).setTween(undoTween4); 
-
-    var scene5 = new ScrollMagic.Scene({
-      triggerElement: "#trigger5",
-      duration: 200,
-      offset: -50
-    }).setTween(tween5);
-             
-    
-    controller.addScene([
-      scene1,
-      undoScene1,
-      scene2,
-      undoScene2,
-      scene3,
-      undoScene3,
-      scene4,
-      undoScene4,
-      scene5
-     ]);
-
- </script>
-          
    <br> 
   </div>
-
-<!-- Test particles -->
-
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 500,
-      "density": {
-        "enable": true,
-        "value_area": 789.1476416322727
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value":  0.48927153781200905,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 5,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 2,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 5,
-        "size_min": 0,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 1,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 83.91608391608392,
-        "size": 1,
-        "duration": 3,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-</script>
 
   <div class="tech-info bg-light">
     <br>    
