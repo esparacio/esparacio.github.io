@@ -2,6 +2,7 @@
 // Made using ScrollMagic
 //
 $(document).ready(function() {
+
   var controller = new ScrollMagic.Controller()
   // build tween
   var tween1 = TweenMax.to("#animate1", 1, {className: "+=large"});

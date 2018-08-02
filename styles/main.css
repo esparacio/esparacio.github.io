@@ -81,10 +81,17 @@ body{
   padding:2em;
 }
 
+.big {
+  width:100%;
+}
+
+.me {
+  padding: 1em;
+}
+
 strong{
   color:#7AE5FF;
 }
-
 
 @media only screen and (max-width: 768px) {
    .navbar .navbar-collapse {
