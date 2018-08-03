@@ -5,11 +5,18 @@ Interactive Portfolio Main CSS
 -->
 */
 
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Montserrat|PT+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Montserrat|PT+Sans|Raleway|Lato');
 
 body{
   padding-bottom: 100px;
   background: black;
+  font-family:'Source Sans Pro';
+  letter-spacing: 0.5px;
+}
+
+.row .col {
+  font-family:'Source Sans Pro';
+  letter-spacing: 0.5px; 
 }
 
 .header-img{
@@ -46,13 +53,15 @@ body{
     color:white;
     text-align:center;
     font-size:250%;
-    font-family:Karla;
-    
+    font-family:Raleway;
+    font-weight:100;
 }
 
 .title{
   text-align:center;
-  font-family:'Montserrat'
+  font-family:'Roboto Slab';
+  font-weight:100;
+
 }
 
 .card-img{
@@ -63,12 +72,11 @@ body{
 
 .card {
   background:transparent;
+  transition: all .2s ease-in-out;
 }
 
 .card:hover{
-    transition: background-color 0.5s ease;
-    transition: border 0.5s ease;
-    background-color:#232323;
+    transform: scale(1.1);
 }
 
 .test{
