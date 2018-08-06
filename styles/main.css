@@ -102,6 +102,18 @@ ul {
   padding: 1em;
 }
 
+p a {
+  padding:1.25em;
+}
+
+.btn-lightblue{
+   background-color:#7AE5FF; 
+}
+
+.lightblue{
+  color:#7AE5FF;
+}
+
 strong{
   color:#7AE5FF;
 }
