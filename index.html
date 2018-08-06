@@ -284,20 +284,21 @@ Interactive Portfolio Home Page
         </div>
       <div class="col-md-8">
         <p> I aspire to work at a company that values <strong>innovation, intellectual development, creativity, and diversity.</strong> If your company would be a good match, don't hesitate to fill out the contact form below: </p>
-      <form>
+      <form action="https://formspree.io/elena.sparacio.work@gmail.com" method="POST">
         <div class="form-group">
           <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+            <input type="text" name="name" class="form-control" id="inputName" placeholder="Enter your name">
         </div>        
         <div class="form-group">
           <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
         <div class="form-group">
           <label for="inputMessage">Message</label>
-          <textarea class="form-control" id="inputMessage" rows="5" placeholder="Enter your message."></textarea>
+          <textarea class="form-control" name="message" id="inputMessage" rows="5" placeholder="Enter your message."></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="hidden" name="_next" value="https://esparacio.github.io/#Contact" />
+        <button type="submit" value="Send" class="btn btn-primary">Submit</button>
       </form>
 
 
