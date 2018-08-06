@@ -14,6 +14,11 @@ body{
   letter-spacing: 0.5px;
 }
 
+ul {
+  list-style-type:none;
+  padding-left: 0;
+}
+
 .row .col {
   font-family:'Source Sans Pro';
   letter-spacing: 0.5px; 
@@ -101,7 +106,7 @@ strong{
   color:#7AE5FF;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
    .navbar .navbar-collapse {
        background-color: black;
        opacity: 0.75;
